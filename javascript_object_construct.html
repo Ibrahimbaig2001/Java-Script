@@ -1,0 +1,23 @@
+<!-- This example shows the use case of object constructors-->
+ <!DOCTYPE html>
+ <html>
+<body>
+<h1>JavaScript Object Constructors.</h1>
+<p id="demo"></p>
+<script>
+    // Define a constructor function
+    function Person(first,last,age,eye){
+        this.firstName = first;
+        this.lastName = last;
+        this.age = age;
+        this.eyeColor  = eye;
+    }
+    // Create a new object
+    const myFather = new Person("John","Doe",50,"blue");
+    // Display age
+    document.getElementById("demo").innerHTML = "my Father is " + myFather.age +" " + "years old."
+</script>
+</body>
+ </html>
+<!-- In Constructor function this has no value.-->
+ <!-- The value of this will become the new object when a new object is created.-->
